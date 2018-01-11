@@ -1,0 +1,9 @@
+{
+  "SET_NEW" : "1",
+  "SET_COVER" : "0",
+  "PRO_LIST" : "productlist",
+  "DEV_PAPER" : "dev_paper",
+  "DEV_BAT":"dev_bat",
+  "DEV_MON":"dev_mon",
+  "DEV_MAIN":"dev_main"
+}

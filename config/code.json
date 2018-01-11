@@ -1,0 +1,31 @@
+{
+  "MONITOR_STATUS" :{
+    "SAMEBODY":"1",
+    "NOBODY":"0"
+  },
+  "PAY_STATUS":{
+    "FAIL":"-1",
+    "INIT":"0",
+    "SUCCESS":"1",
+    "OTHER":"2"
+  },
+  "SENT_STATUS":{
+    "FAIL":"-1",
+    "INIT":"0",
+    "SUCCESS":"1",
+    "OTHER":"2"
+  },
+  "TRADE_TYPE":{
+    "RECHARGE":"0",
+    "CONSUME":"1"
+  },
+  "PRO_TYPE":{
+    "MONEY":"1",
+    "PAPER":"2"
+  },
+  "PAY_CHANNEL_NO":{
+       "BALANCE":"0",
+    "SCORE" : "1",
+    "WECHAT":"2"
+  }
+}

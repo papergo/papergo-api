@@ -1,0 +1,17 @@
+{
+  "appenders": { 
+      "papergo":{ 
+          "type": "dateFile", 
+          "filename": "E:\\logs\\papergo",
+          "pattern" : "-yyyy-MM-dd.log",
+          "alwaysIncludePattern" : true
+       } 
+  },
+  "categories": { 
+      "default": { 
+           "appenders": ["papergo"], 
+           "level": "info" 
+      } 
+  },
+  "replaceConsole": true
+}

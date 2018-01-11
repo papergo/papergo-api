@@ -1,0 +1,21 @@
+{
+  "name": "papergo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@alicloud/sms-sdk": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "log4js": "^2.3.4",
+    "md5": "^2.2.1",
+    "moment": "^2.19.0",
+    "mongoose": "^4.11.9",
+    "urlencode": "^1.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+	"SUCCESS":{
+	  "result": "",
+	  "status": {
+	    "code": 0,
+	    "description": "success"
+	  }
+	},
+    "FAIL":
+	{	
+	  "result": "",
+	  "status": {
+	    "code": 1,
+	    "description": "fail"
+	  }
+	}
+
+}
+
+
