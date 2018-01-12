@@ -182,19 +182,19 @@ router.route('/trade_score')
  *  出纸结果
  **/
 router.route('/paper_result')
-    .post(async function(req, res) {
-    if(utils.isEmpty(req.body.trade_no)||
-        utils.isEmpty(req.body.result)){
+    .get(async function(req, res) {
+    if(utils.isEmpty(req.query.trade_no)||
+        utils.isEmpty(req.query.result)){
         return res.json(utils.fail(msg_code.PARAM_ERROR));
     }else{
         var tradeBak;
         var userBak;
         //1.查找订单数据
         try{
-            var trade = await dbPromise.findOne(Trade,{trade_no:req.body.trade_no});
+            var trade = await dbPromise.findOne(Trade,{trade_no:req.query.trade_no});
             if(!utils.isEmpty(trade)){
                 tradeBak = trade;
-                trade.send_status = req.body.result;
+                trade.send_status = req.query.result;
                 trade.send_time = Date.now();
                 log.logger.info("订单：" + trade.trade_no + "，收到出纸回调通知，："+ trade);
                 //2.保存订单数据,进入下一个then
